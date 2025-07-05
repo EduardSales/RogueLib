@@ -81,3 +81,11 @@ private void ExportCSV(string _path)
 }
 ```
 
+Build and Installation
+---
+RogueLib releases are available at the [release page](https://github.com/EduardSales/RogueLib/releases).
+
+To use the library first download from the release page the asset called RogueLib, inside you'll find 2 folders,  **Dependencies** and **library** inside there are the dll necesary.
+To have the library set, open Unity and inside the Plugins folder, add the content of the 2 folders from before.
+
+
