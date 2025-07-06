@@ -3,6 +3,8 @@ RogueLib is a lightweight library designed for small teams developing roguelikes
 
 How to use
 ---
+For a more in-depth guide check [User manual](https://github.com/EduardSales/RogueLib/wiki/User-Manual).
+
 RogueLib is designed to be simple to use, and is divided into two main parts: **data collection** and **data visualization**.
 Let's start with data collection.
 The data will be store in two parts, first everything that happens in a run will be stored in a class called *Run*, and the whole data of the session, like all the runs, or methods needed to store and show the information, will be stored in a class called **Vault**.
