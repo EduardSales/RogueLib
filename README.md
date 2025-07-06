@@ -89,6 +89,6 @@ RogueLib releases are available at the [release page](https://github.com/EduardS
 
 To use the library first download from the release page the asset called RogueLib, inside you'll find 2 folders,  **Dependencies** and **library** inside are the dll necesary.
 
-To have the library set, open Unity and inside the Plugins folder, add the content of the 2 folders from before.
+To have the library set, open Unity and inside the Plugins folder (if it doesn't exist, create it inside the Assets folder), add the content of the 2 folders from before.
 
 
