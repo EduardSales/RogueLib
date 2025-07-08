@@ -197,6 +197,13 @@ namespace RogueLib
                 {
                     sb.AppendLine(" with seed: " + run.seed);
                 }
+                sb.AppendLine();
+                if (run.player != null)
+                {
+                    sb.AppendLine("Played with " + run.player);
+                }
+                sb.AppendLine();
+
                 //specs
                 if (run.specs != null && run.specs.Count > 0)
                 {
@@ -207,10 +214,17 @@ namespace RogueLib
                     }
                 }
                 sb.AppendLine();
-                if (run.player != null)
+
+                //progress
+                if (run.progress != null && run.progress.Count > 0)
                 {
-                    sb.AppendLine("Played with " + run.player);
+                    sb.AppendLine("Run progress");
+                    foreach (Progress progress in run.progress)
+                    {
+                        sb.AppendLine(progress.description);
+                    }
                 }
+                sb.AppendLine();
 
                 //pickups
                 if (run.pickUps != null && run.pickUps.Count > 0)
@@ -231,6 +245,7 @@ namespace RogueLib
                 {
                     sb.AppendLine("No pick ups were recolected this run");
                 }
+                sb.AppendLine();
 
                 //items
                 if (run.itemList != null && run.itemList.Count > 0)
@@ -263,12 +278,24 @@ namespace RogueLib
                         sb.AppendLine(" - " + highlight.GetHighlight());
                     }
                 }
+                sb.AppendLine();
+
                 //end message
                 if (run.endMessage != null)
                 {
                     sb.AppendLine(run.endMessage);
                 }
                 sb.AppendLine();
+
+                //errors
+                if (run.errors != null && run.errors.Count > 0)
+                {
+                    sb.AppendLine("Run errors");
+                    foreach (Error error in run.errors)
+                    {
+                        sb.AppendLine(error.message);
+                    }
+                }
             }
             File.WriteAllText(path, sb.ToString());
         }
