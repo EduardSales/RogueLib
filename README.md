@@ -92,4 +92,6 @@ To use the library first download from the release page the asset called RogueLi
 
 To have the library set, open Unity and inside the Plugins folder (if it doesn't exist, create it inside the Assets folder), add the content of the 2 folders from before.
 
-
+Licence
+---
+This project has the [MIT Licence](https://github.com/EduardSales/RogueLib/blob/main/LICENSE).
