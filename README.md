@@ -79,8 +79,7 @@ using RogueLib;
 private void ExportCSV(string _path)
 {
   //You'll have to put the path where you want the pdf to be sored localy on your PC
-  //In this one you dont specify the name, because it generates diferent csv
-  //Doing this you can choose what you wanna save and how
+  //In this one you dont specify the name, because it generates more than one .csv
   Vault.Instance.GenerateCSVReport(_path);
 }
 ```
@@ -93,4 +92,6 @@ To use the library first download from the release page the asset called RogueLi
 
 To have the library set, open Unity and inside the Plugins folder (if it doesn't exist, create it inside the Assets folder), add the content of the 2 folders from before.
 
-
+Licence
+---
+This project has the [MIT Licence](https://github.com/EduardSales/RogueLib/blob/main/LICENSE).
